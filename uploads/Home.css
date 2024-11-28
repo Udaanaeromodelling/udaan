@@ -1,0 +1,216 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f3f4f6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Section */
+.home-page header {
+  background-image: linear-gradient(rgba(10, 17, 40, 0.9), rgba(10, 17, 40, 0.8)), url(../../utils/images/inde.png);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding: 20px 0;
+}
+
+header h1 {
+  font-size: 5rem;
+  letter-spacing: 3px;
+  color: #1e90ff;
+  animation: pulse 1.5s infinite;
+}
+
+header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: small;
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+/* Blog Section */
+.blog-section {
+  background-image: linear-gradient(rgba(5, 10, 35, 0.85), rgba(5, 10, 35, 0.85)), url(../../utils/images/blog-section-img.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 5rem 0;
+}
+
+.blog-section h2 {
+  font-size: 2.5rem;
+  color: #1e90ff;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Blog Cards */
+.blog-section .card {
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.blog-section .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.blog-section .card-title {
+  font-size: 1.5rem;
+  color: #0056b3;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.blog-section .card-text {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Creator Section */
+.creator-section {
+  background-color: #f9f9f9;
+  padding: 4rem 0;
+}
+
+.creator-section h2 {
+  font-size: 2.5rem;
+  color: #1e90ff;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Creator Cards */
+.creator-section .card {
+  background: rgba(255, 255, 255, 0.95);
+  border: none;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  height: 10px;
+}
+
+.creator-section .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.creator-section .card-title {
+  font-size: 0.95rem;
+  color: #333;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.creator-section .card-text {
+  font-size: 0.01rem;
+  color: #555;
+  /* line-height: 0.6; */
+  font-style: italic;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  header h1 {
+    font-size: xx-large;
+   }
+
+  header h2 {
+    font-size: 1.8rem;
+  }
+
+  .blog-section h2, .creator-section h2 {
+    font-size: 2rem;
+  }
+
+  .creator-section .card-title {
+    font-size: 1.15rem;
+  }
+
+  .blog-section .card-title {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 576px) {
+  header h1 {
+    font-size: xx-large;
+  }
+
+  header h2 {
+    font-size: 1.5rem;
+  }
+
+  .blog-section .card-title {
+    font-size: 1.25rem;
+  }
+
+  .creator-section .card-title {
+    font-size: 1.1rem;
+  }
+
+  .creator-section .card-text {
+    font-size: 0.85rem;
+  }
+
+  .blog-section .card-text {
+    font-size: 0.9rem;
+  }
+}
+
+.note-section {
+  max-width: 400px;
+  min-width: 250px;
+}
+
+.note-section h3 {
+  font-size: 1.5rem;
+  color: #1e90ff;
+  font-weight: bold;
+}
+
+.note-section p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  /* .d-flex {
+    flex-direction: column;
+  } */
+
+  .note-section {
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .row {
+    justify-content: center;
+  }
+}
+
