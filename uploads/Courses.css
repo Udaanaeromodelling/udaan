@@ -1,0 +1,116 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0a1128; /* Deep blue for a sky-like feel */
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+.courses-page header {
+    background-image: linear-gradient(rgba(10, 17, 40, 0.9), rgba(10, 17, 40, 0.8)), 
+                                    url('../../utils/images/courses-page-header.jpg'); /* Update to aeromodelling-themed image */
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 5px solid #00bcd4; /* Sky blue border accent */
+}
+
+.courses-page header h1 {
+    
+    text-transform: uppercase;
+   
+    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.7);
+    letter-spacing: 2px;
+}
+
+.courses-page header p {
+    font-size: 1.2rem;
+    color: #c5e4f3; /* Light blue for a futuristic tone */
+    text-align: justify;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 20px auto 0;
+    padding: 0 15px;
+}
+
+/* Card Hover Effect */
+.courses-page .card {
+    position: relative;
+    overflow: hidden;
+    border: none;
+    height: 320px;
+    border-radius: 15px;
+    background-color: #14233c; /* Dark background for a sleek design */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.courses-page .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.7);
+}
+
+.courses-page .card-img-overlay {
+    background: linear-gradient(135deg, rgba(0, 60, 100, 0.9), rgba(20, 40, 80, 0.9));
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.courses-page .card:hover .card-img-overlay {
+    opacity: 1;
+}
+
+.courses-page .card-title {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffcc00; /* Gold for achievements and inspiration */
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.courses-page .card-text {
+    font-size: 1rem;
+    color: #c5d8e8; /* Soft contrast for readability */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+}
+
+.courses-page .card-title.year {
+    font-size: 1.5rem;
+    color: #1de9b6; /* Bright green-blue for a vibrant touch */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .courses-page header h1 {
+       font-size:xx-large;
+        margin-top: 9rem;
+    }
+
+    .courses-page header p {
+        font-size: x-small;
+        color:#d6bcfa
+       
+    }
+
+    .courses-page .card {
+        height: 250px;
+    }
+
+    .courses-page .card-title {
+        font-size: 1.5rem;
+    }
+}
